@@ -1,0 +1,53 @@
+.obtener-tp {
+  display: grid;
+  grid-template-areas: "stack";
+  place-items: center;
+  padding: 0 80px;
+  position: relative;
+}
+
+.obtener-tp .content {
+  grid-area: stack;
+  z-index: 2;
+  color: #FFF;
+
+  align-self: center;
+  justify-self: end;
+
+  margin: 0 60px 0 10px;
+}
+
+.obtener-tp .obtener-tp-img {
+  grid-area: stack;
+  width: 100%;
+  z-index: -1;
+
+  /* clave 👇 */
+  object-fit: cover;
+  object-position: right center;
+}
+
+.tp-btn {
+  margin-top: 24px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+
+  color: #fff;
+  background: #2E4157;
+
+  box-shadow: 0 10px 25px rgba(74, 146, 203, 0.35);
+  transition: all 0.3s ease;
+}
+
+.tp-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(74, 146, 203, 0.5);
+}
+
+.tp-btn:active {
+  transform: scale(0.97);
+}

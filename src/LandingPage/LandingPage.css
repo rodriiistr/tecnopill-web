@@ -1,0 +1,38 @@
+.hero {
+  display: grid;
+  grid-template-areas: "stack";
+  place-items: center;
+  padding: 0 80px;
+}
+
+.hero-text{
+  font-size: 20px;
+  margin: 0;
+}
+
+.hero-title{
+  font-size: 48px;
+}
+
+.typh{
+  font-size: 70px;
+  font-family: 'Lora', serif;
+  font-style: italic;
+}
+
+.hero-img{
+  grid-area: stack;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero .content{
+  grid-area: stack;
+  z-index: 1;
+  color: #FFF;
+
+  align-self: center;   /* vertical */
+  justify-self: start;  /* izquierda */
+
+  margin-left: 90px;
+}
