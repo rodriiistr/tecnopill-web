@@ -99,33 +99,33 @@ function About() {
 
                 <div className="equipo-list">
                     <div className="miembro">
-                        <div className="avatar">R</div>
-                        <h4>Rodrigo</h4>
-                        <p>Desarrollo y diseño del sistema</p>
-                    </div>
-
-                    <div className="miembro">
                         <div className="avatar">A</div>
-                        <h4>Integrante 2</h4>
-                        <p>Investigación y documentación</p>
+                        <h4>Alejandro Gutiérrez Núñez</h4>
+                        <p>Hardware y prototipo | App Móvil</p>
                     </div>
 
                     <div className="miembro">
-                        <div className="avatar">J</div>
-                        <h4>Integrante 3</h4>
+                        <div className="avatar">D</div>
+                        <h4>Deiver Roque Rodas Torres</h4>
                         <p>Hardware y prototipo</p>
                     </div>
 
                     <div className="miembro">
-                        <div className="avatar">J</div>
-                        <h4>Integrante 3</h4>
-                        <p>Hardware y prototipo</p>
+                        <div className="avatar">X</div>
+                        <h4>Xiomara Berenice Gómez Pérez</h4>
+                        <p>Gestión de proyecto y análisis de costos</p>
                     </div>
 
                     <div className="miembro">
-                        <div className="avatar">J</div>
-                        <h4>Integrante 3</h4>
-                        <p>Hardware y prototipo</p>
+                        <div className="avatar">N</div>
+                        <h4>Maricela Naomi Mayorga Espinosa</h4>
+                        <p>Gestión de proyecto y análisis de costos</p>
+                    </div>
+
+                    <div className="miembro">
+                        <div className="avatar">R</div>
+                        <h4>Rodrigo González López</h4>
+                        <p>Desarrollo Web y App Móvil</p>
                     </div>
                 </div>
             </div>

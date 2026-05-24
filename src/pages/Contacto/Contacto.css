@@ -1,3 +1,6 @@
+/* ===================== */
+/* BASE */
+/* ===================== */
 .contact {
   width: 100%;
   min-height: 100vh;
@@ -104,13 +107,62 @@ textarea {
   opacity: 0.3;
 }
 
-/* RESPONSIVE */
+/* ===================== */
+/* TABLET */
+/* ===================== */
+@media (max-width: 1024px) {
+
+  .contact {
+    padding: 30px;
+  }
+
+  .contact-form {
+    padding: 30px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+}
+
+/* ===================== */
+/* MOBILE / TABLET PEQUEÑA */
+/* ===================== */
 @media (max-width: 800px) {
+
   .contact-container {
     grid-template-columns: 1fr;
   }
 
   .contact-side {
     display: none;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+
+  .row {
+    flex-direction: column; /* 👈 clave */
+  }
+}
+
+/* ===================== */
+/* MOBILE PEQUEÑO */
+/* ===================== */
+@media (max-width: 480px) {
+
+  .contact {
+    padding: 20px;
+  }
+
+  .contact-form h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 14px;
   }
 }

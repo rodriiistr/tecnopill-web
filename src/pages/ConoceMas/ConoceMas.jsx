@@ -76,28 +76,28 @@ function TecnoPill() {
 
       <div className="stats-bar">
         <div className="stat-card blue">
-          <div className="stat-icon">💊</div>
+          <div className="stat-icon"><i class="fa-solid fa-pills"></i></div>
           <div className="stat-info">
             <div className="stat-label">Medicamentos</div>
             <div className="stat-value">{meds.length}</div>
           </div>
         </div>
         <div className="stat-card green">
-          <div className="stat-icon">✅</div>
+          <div className="stat-icon"><i class="fa-solid fa-check"></i></div>
           <div className="stat-info">
             <div className="stat-label">Completadas</div>
             <div className="stat-value">{totalCompletadas}</div>
           </div>
         </div>
         <div className="stat-card red">
-          <div className="stat-icon">⚠️</div>
+          <div className="stat-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
           <div className="stat-info">
             <div className="stat-label">Omitidas</div>
             <div className="stat-value">{totalOmitidas}</div>
           </div>
         </div>
         <div className="stat-card amber">
-          <div className="stat-icon">📋</div>
+          <div className="stat-icon"><i class="fa-solid fa-clipboard-list"></i></div>
           <div className="stat-info">
             <div className="stat-label">Tomas totales</div>
             <div className="stat-value">{totalTomas}</div>

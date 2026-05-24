@@ -3,11 +3,11 @@ import './ObtenerTecnopill.css'
 function ObtenerTecnopill() {
     return (
         <section className="obtener-tp">
-            <div className="content">
-                <p className='hero-text'>Consigue tu dispositivo</p>
-                <h1 className='hero-text hero-title obtener-tp-h1'>
+            <div className="content-tp">
+                <p className='hero-text-tp'>Consigue tu dispositivo</p>
+                <h1 className='hero-text-tp hero-title-tp obtener-tp-h1'>
                     Lleva el control de tu medicación <br />
-                    <span className='hero-title typh'>con Tecnopill</span>
+                    <span className='hero-title-tp typh-tp'>con Tecnopill</span>
                 </h1>
 
                 <button className="tp-btn">Obtener ahora</button>

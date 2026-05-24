@@ -1,3 +1,6 @@
+/* ===================== */
+/* BASE */
+/* ===================== */
 .obtener-tp {
   display: grid;
   grid-template-areas: "stack";
@@ -6,32 +9,37 @@
   position: relative;
 }
 
-.obtener-tp .content {
+/* CONTENIDO */
+.obtener-tp .content-tp {
   grid-area: stack;
-  z-index: 2;
-  color: #FFF;
+  z-index: 1;
+  color: #fff;
 
   align-self: center;
   justify-self: end;
 
   margin: 0 60px 0 10px;
+  max-width: 500px;
 }
 
+/* IMAGEN */
 .obtener-tp .obtener-tp-img {
   grid-area: stack;
   width: 100%;
-  z-index: -1;
+  height: auto;
+  z-index: 0;
 
-  /* clave 👇 */
   object-fit: cover;
   object-position: right center;
 }
 
+/* BOTÓN */
 .tp-btn {
   margin-top: 24px;
   padding: 14px 28px;
   font-size: 16px;
   font-weight: 600;
+
   border: none;
   border-radius: 999px;
   cursor: pointer;
@@ -50,4 +58,70 @@
 
 .tp-btn:active {
   transform: scale(0.97);
+}
+
+/* ===================== */
+/* TABLET */
+/* ===================== */
+@media (max-width: 1024px) {
+
+  .obtener-tp {
+    padding: 0 40px;
+  }
+
+  .obtener-tp .content-tp {
+    margin: 0 30px 0 10px;
+    max-width: 420px;
+  }
+
+  .tp-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+
+  .obtener-tp {
+    padding: 0 20px;
+  }
+
+  .obtener-tp .content-tp {
+    justify-self: end;
+    text-align: right;
+    margin: 0;
+  }
+
+  .obtener-tp .obtener-tp-img {
+    object-position: end;
+  }
+
+  .tp-btn {
+    width: 80%;
+    margin-top: 10px;
+    margin-right: 60px;
+  }
+
+  .hero-text-tp{
+    margin-right: 60px;
+  }
+}
+
+/* ===================== */
+/* MOBILE PEQUEÑO */
+/* ===================== */
+@media (max-width: 480px) {
+
+  .tp-btn {
+    font-size: 14px;
+    margin: 10px;
+    margin-right: 50px;
+  }
+
+  .hero-text-tp {
+    display: none;
+  }
 }

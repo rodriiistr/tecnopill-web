@@ -12,6 +12,11 @@ function LandingPage() {
                 src="../assets/img/landing/hero_section.png"
                 alt="producto"
             />
+            <img
+                className="hero-img-mobile"
+                src="../assets/img/landing/hero-section-mobile.png"
+                alt="producto"
+            />
         </section>
     );
 }

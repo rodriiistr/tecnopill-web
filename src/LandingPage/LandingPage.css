@@ -1,38 +1,150 @@
+/* ===================== */
+/* HERO BASE */
+/* ===================== */
 .hero {
   display: grid;
   grid-template-areas: "stack";
   place-items: center;
   padding: 0 80px;
+  position: relative;
 }
 
-.hero-text{
+/* TEXTO BASE */
+.hero-text {
   font-size: 20px;
   margin: 0;
 }
 
-.hero-title{
+.hero-title {
   font-size: 48px;
 }
 
-.typh{
+.typh {
   font-size: 70px;
   font-family: 'Lora', serif;
   font-style: italic;
 }
 
-.hero-img{
-  grid-area: stack;
-  width: 100%;
-  z-index: -1;
-}
-
-.hero .content{
+/* CONTENIDO */
+.hero .content {
   grid-area: stack;
   z-index: 1;
-  color: #FFF;
+  color: #fff;
 
-  align-self: center;   /* vertical */
-  justify-self: start;  /* izquierda */
+  align-self: center;
+  justify-self: start;
 
   margin-left: 90px;
+}
+
+/* ===================== */
+/* IMÁGENES */
+/* ===================== */
+.hero-img {
+  grid-area: stack;
+  width: 100%;
+  z-index: 0;
+  object-fit: cover;
+}
+
+.hero-img-mobile {
+  display: none;
+}
+
+/* ===================== */
+/* TABLET */
+/* ===================== */
+@media (max-width: 1024px) {
+
+  .hero {
+    padding: 0 40px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .typh {
+    font-size: 55px;
+  }
+
+  .hero .content {
+    margin-left: 40px;
+  }
+}
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 0 20px;
+  }
+
+  /* texto */
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .typh {
+    font-size: 42px;
+  }
+
+  .hero .content {
+    margin-left: 0;
+    justify-self: start;
+    text-align: start;
+    padding: 0 10px;
+    margin-left: 30px;
+  }
+}
+
+/* ===================== */
+/* MOBILE PEQUEÑO */
+/* ===================== */
+@media (max-width: 480px) {
+
+  /* cambiar imágenes */
+  .hero-img {
+    display: none;
+  }
+
+  .hero-img-mobile {
+    display: block;
+    grid-area: stack;
+    width: 100%;
+    z-index: 0;
+    object-fit: cover;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .typh {
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  /* CONTENIDO CENTRADO ARRIBA */
+
+  .hero .content {
+    justify-self: center;
+    align-self: start;   /* 👈 esto lo sube arriba */
+    text-align: center;
+    margin-left: 0;
+    padding-top: 100px;   /* 👈 separación del top */
+  }
 }

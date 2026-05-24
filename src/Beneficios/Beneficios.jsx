@@ -19,11 +19,12 @@ function Beneficios() {
                     <p>Controla tu medicación desde cualquier lugar.</p>
                 </div>
                 <div className="box tall img-3">
-                    <h4>Organización total</h4>
-                    <p>Todo claro, simple y accesible.</p>
+                    <h4>Almacenamiento amplio</h4>
+                    <p>Almacenamiento amplio de dosis para mayor autonomía y menos recargas frecuentes.</p>
                 </div>
                 <div className="box medium img-4">
                     <h4>Integración completa</h4>
+                    <p>En donde sea que te encuentres</p>
                 </div>
             </div>
         </section>

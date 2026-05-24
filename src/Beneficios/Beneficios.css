@@ -1,3 +1,6 @@
+/* ===================== */
+/* BASE */
+/* ===================== */
 .beneficios {
     padding: 80px 40px;
     background: #fff;
@@ -18,7 +21,7 @@
     max-width: 500px;
 }
 
-/* GRID 4 columnas iguales */
+/* GRID DESKTOP */
 .beneficios-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -26,7 +29,7 @@
     align-items: end;
 }
 
-/* BOX BASE */
+/* BOX */
 .box {
     background: #f7f9fc;
     border-radius: 16px;
@@ -52,33 +55,96 @@
     color: #FFF;
 }
 
-/* Imagenes */
+/* IMÁGENES */
 .img-1{
-    background: url("./assets/img/beneficios/beneficio-1.png") center/cover no-repeat;
+    background: url("/assets/img/beneficios/beneficio-1.png") center/cover no-repeat;
 }
-
 .img-2{
-    background: url("./assets/img/beneficios/beneficio-2.png") center/cover no-repeat;
+    background: url("/assets/img/beneficios/beneficio-2.png") center/cover no-repeat;
 }
-
 .img-3{
-    background: url("./assets/img/beneficios/beneficio-3.png") center/cover no-repeat;
+    background: url("/assets/img/beneficios/beneficio-3.jpg") center/cover no-repeat;
 }
-
 .img-4{
-    background: url("./assets/img/beneficios/beneficio-4.png") center/cover no-repeat;
+    background: url("/assets/img/beneficios/beneficio-4.png") center/cover no-repeat;
 }
 
 /* ALTURAS */
-.tall {
-    height: 280px;
-}
-
-.medium {
-    height: 260px;
-}
+.tall { height: 280px; }
+.medium { height: 260px; }
 
 .dark p {
     color: rgba(255,255,255,0.8);
 }
 
+/* ===================== */
+/* TABLET */
+/* ===================== */
+@media (max-width: 1024px) {
+
+    .beneficios {
+        padding: 60px 30px;
+    }
+
+    .beneficios-text h2 {
+        font-size: 30px;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .tall {
+        height: 240px;
+    }
+
+    .medium {
+        height: 220px;
+    }
+}
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+
+    .beneficios {
+        padding: 50px 20px;
+    }
+
+    .beneficios-text h2 {
+        font-size: 26px;
+    }
+
+    .beneficios-text p {
+        font-size: 14px;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr; /* 👈 todo en columna */
+    }
+
+    .box {
+        height: 220px; /* uniforme en mobile */
+    }
+}
+
+/* ===================== */
+/* MOBILE PEQUEÑO */
+/* ===================== */
+@media (max-width: 480px) {
+
+    .beneficios {
+        padding: 40px 15px;
+    }
+
+    .beneficios-text h2 {
+        font-size: 22px;
+    }
+
+    .box {
+        height: 200px;
+        padding: 16px;
+    }
+}
